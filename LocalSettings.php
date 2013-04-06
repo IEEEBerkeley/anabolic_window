@@ -147,3 +147,5 @@ $wgGroupPermissions['*']['read'] = false;
 # End of automatically generated settings.
 # Add more configuration options below.
 
+# add/manage users to actually use this thing!
+require_once( "$IP/extensions/UserAdmin/UserAdmin.php" );
