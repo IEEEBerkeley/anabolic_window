@@ -66,14 +66,8 @@ if (preg_match('%(.*?)://([^:]+):([^@]+)@([^:]+):(\d+)/(.*)%', $_wgDBConnectionS
   die("Failed to parse DB connection string");
 }
 
-## replaced all of the below database settings with the ones above to work with Heroku
-/*
-$wgDBtype           = "postgres";
-$wgDBserver         = "ec2-23-21-170-190.compute-1.amazonaws.com";
-$wgDBname           = "del02cb128djq7";
-$wgDBuser           = "plxklecodhqimq";
-$wgDBpassword       = "hOkNPaCRng-O9AHx6QLyC_CJBR";
-*/
+## replaced automatic database settings with the ones above to work with Heroku
+## all of above settings were hard-coded and not suitable for a public repo
 
 # Postgres specific settings
 $wgDBport           = "5432";
