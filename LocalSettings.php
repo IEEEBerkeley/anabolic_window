@@ -54,7 +54,7 @@ $wgEnotifWatchlist     = false; # UPO
 $wgEmailAuthentication = true;
 
 ## Database settings
-$_wgDBConnectionString = getenv('DATABASE_URL');
+$_wgDBConnectionString = getenv('HEROKU_POSTGRESQL_BROWN_URL');
 if (preg_match('%(.*?)://([^:]+):([^@]+)@([^:]+):(\d+)/(.*)%', $_wgDBConnectionString, $regs, PREG_OFFSET_CAPTURE)) {
   $wgDBtype = $regs[1][0];
   $wgDBuser = $regs[2][0];
