@@ -20,8 +20,8 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 ## Uncomment this to disable output compression
 # $wgDisableOutputCompression = true;
 
-$wgSitename      = "Berkeley IEEE";
-$wgMetaNamespace = "berkieee";
+$wgSitename      = "Berkeley IEEE Wiki";
+$wgMetaNamespace = "berkieee-wiki";
 
 ## The URL base path to the directory containing the wiki;
 ## defaults for all runtime URL paths are based off of this.
@@ -39,7 +39,8 @@ $wgStylePath        = "$wgScriptPath/skins";
 
 ## The relative URL path to the logo.  Make sure you change this from the default,
 ## or else you'll overwrite your logo when you upgrade!
-$wgLogo             = "$wgStylePath/common/images/wiki.png";
+$wgLogo             = "/assets/logo_main-02c727fb586c5d5c422e5dd8ad9c294c.png";
+#$wgLogo             = "$wgStylePath/common/images/wiki.png";
 
 ## UPO means: this is also a user preference option
 
